@@ -1,3 +1,19 @@
+## Usage
+```bash
+usage: yolo_main.py [-h] [--cfg CFG] [--weights WEIGHTS] [--names NAMES] [--image IMAGE] [--video VIDEO] [--mode MODE]
+
+YOLO Object Detection
+
+options:
+  -h, --help         show this help message and exit
+  --cfg CFG          path to configuration file
+  --weights WEIGHTS  path to the pre-trained weights file
+  --names NAMES      path to class names file
+  --image IMAGE      image path
+  --video VIDEO      camera device number
+  --mode MODE        mode: image or video
+```
+
 ## Deep Dive into YOLOv3 Configuration and Fine-Tuning
 
 ### Understanding YOLOv3 Configuration File
