@@ -134,6 +134,7 @@ def detect_objects_video(cfg_file, weight_file, namesfile, capture_device):
         # Display the image with bounding boxes
         # plot_boxes(original_image, boxes, class_names, plot_labels=True)
         frame = create_image_with_boxes(original_image, boxes, class_names, plot_labels=True)
+        frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
 
         cv2.imshow('frame', cv2.resize(frame, (800, 600)))
         # show the frame with a size of 800x600
